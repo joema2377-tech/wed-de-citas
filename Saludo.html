@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roblox Love 💕</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #170f20;
+            color: white;
+        }
+
+        header {
+            background: #29132f;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ff69bd;
+            font-size: 40px;
+        }
+
+        nav {
+            background: #43204d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .principal {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #6e287a, #24132e);
+        }
+
+        .principal h2 {
+            font-size: 38px;
+            color: #ff9bdf;
+        }
+
+        .principal p {
+            font-size: 18px;
+        }
+
+        button {
+            background: #ff4fa3;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #d62980;
+            transform: scale(1.08);
+        }
+
+        .personajes {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .tarjeta {
+            background: #2c1b35;
+            width: 230px;
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #ff4fa3;
+        }
+
+        .avatar {
+            font-size: 75px;
+            background: #492953;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .tarjeta h3 {
+            color: #ff85c5;
+        }
+
+        .precio {
+            color: #ffe082;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #29132f;
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>💕 ROBLOX LOVE 💕</h1>
+        <p>¡Tu compañía virtual te está esperando!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="principal" id="inicio">
+
+        <h2>¡NO JUEGUES SOLO!</h2>
+
+        <p>
+            Encuentra tu compañera ideal
+            para jugar, conversar y vivir aventuras.
+        </p>
+
+        <button onclick="alert('¡Bienvenido a Roblox Love! 💕')">
+            CONOCER PERSONAJES
+        </button>
+
+    </section>
+
+    <section class="personajes" id="personajes">
+
+        <h2>💗 NUESTRAS COMPAÑERAS 💗</h2>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <div class="avatar">👩🏻</div>
+                <h3>Princesita</h3>
+                <p>Le encanta Brookhaven y Adopt Me.</p>
+                <p class="precio">10 Robux / partida</p>
+                <button onclick="contratar('Princesita')">
+                    CONTRATAR
+                </button>
+            </div>
+
+            <div class="tarjeta">
+                <div class="avatar">👩🏽</div>
+                <h3>La Elegante</h3>
+                <p>Experta en moda y decoración.</p>
+                <p class="precio">20 Robux / partida</p>
+                <button onclick="contratar('La Elegante')">
+                    CONTRATAR
+                </button>
+            </div>
+
+            <div class="tarjeta">
+                <div class="avatar">👩🏼</div>
+                <h3>La Gamer</h3>
+                <p>Le encantan los desafíos y competir.</p>
+                <p class="precio">15 Robux / partida</p>
+                <button onclick="contratar('La Gamer')">
+                    CONTRATAR
+                </button>
+            </div>
+
+            <div class="tarjeta">
+                <div class="avatar">👩🏾</div>
+                <h3>La Misteriosa</h3>
+                <p>Amante de los juegos de terror.</p>
+                <p class="precio">25 Robux / partida</p>
+                <button onclick="contratar('La Misteriosa')">
+                    CONTRATAR
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="contacto">
+        <h3>ROBLOX LOVE 💕</h3>
+        <p>Una experiencia virtual llena de diversión.</p>
+        <p>© 2026 - Página de entretenimiento ficticia.</p>
+    </footer>
+
+    <script>
+
+        function contratar(nombre) {
+
+            alert(
+                "💕 ¡Has seleccionado a " + nombre +
+                "! 💕\n\nGracias por visitar Roblox Love."
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
